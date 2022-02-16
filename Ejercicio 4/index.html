@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/style.css" rel="stylesheet" type="text/css">
+    <title>Ejercicio 4</title>
+</head>
+<body>
+        <h1 class="titulo">Diferentes campos de datos</h1>
+    <form name="myForm" method="post">
+            <label for="txtNombre" class="opciones" >Nombre: </label>
+            <input type="text" name="txtNombre" id="txtNombre" placeholder="Nombre del usuario" required>
+        <br><br>
+            <input type="radio" name="rbTurno" id="rbMañana" checked>
+            <label for="rbMañana" class="opciones">Mañana</label>
+            <input type="radio" name="rbTurno" id="rbTarde">
+            <label for="rbTarde" class="opciones">Tarde</label>
+        <br><br>
+            <input type="checkbox" name="chxIdioma[]" id="chxCatalan" value="Catalan">
+            <label for="chxIdioma" class="opciones">Catalán</label>
+            <input type="checkbox" name="chxIdioma[]" id="chxCastellano" value="Castellano">
+            <label for="chxIdioma" class="opciones">Castellano</label>
+            <input type="checkbox" name="chxIdioma[]" id="chxInglés" value="Inglés">
+            <label for="chxIdioma" class="opciones">Inglés</label>
+        <br><br>
+            <label for="txtDescripcion" class="opciones">Descripción</label>
+            <textarea name="txtDescripcion" id="txtDescripcion" cols="30" rows="10"></textarea>
+        <br><br>
+            <button type="submit" onclick="validateForm()" class="opciones">Aceptar</button>
+    </form>
+        <script src="/main.js"></script>
+    
+</body>
+</html>
